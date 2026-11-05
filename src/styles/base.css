@@ -1,0 +1,11 @@
+/* Design tokens and page defaults */
+:root {
+  --bg: #f6f4ef; --ink: #1d2b2a; --muted: #66736f;
+  --line: #d9d6cc; --accent: #1f6f5c; --card: #fffdf8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Segoe UI", system-ui, sans-serif; }
+h1, h2, h3 { margin: 0 0 .5rem; }
+.logo { font-family: Georgia, serif; font-size: 1.5rem; margin: 0; }
+.muted { color: var(--muted); font-size: .9rem; margin: 0; }
+.emoji { font-size: 3rem; }

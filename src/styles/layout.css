@@ -1,0 +1,11 @@
+/* Page structure */
+.site-header { display: flex; gap: 1rem; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  padding: 1rem 2rem; border-bottom: 1px solid var(--line); }
+.nav { display: flex; gap: .25rem; flex-wrap: wrap; }
+.page { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+.row { display: flex; gap: .5rem; align-items: center; justify-content: space-between; }
+.line { display: flex; gap: 1rem; align-items: center; padding: .8rem 0; border-bottom: 1px solid var(--line); }
+.line .grow { flex: 1; }
+.cart-total { margin-top: 1rem; }
+@media (max-width: 600px) { .site-header, .page { padding: 1rem; } }
