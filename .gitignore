@@ -7,3 +7,7 @@ build/
 .env.*
 !.env.example
 "@ | Set-Content .gitignore
+
+git rm -r --cached --ignore-unmatch node_modules dist
+git add .gitignore src package.json package-lock.json
+git status
