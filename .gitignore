@@ -1,7 +1,13 @@
+@"
 node_modules/
+**/node_modules/
 dist/
+build/
 .env
 .env.*
 !.env.example
-.DS_Store
-*.log
+"@ | Set-Content .gitignore
+
+git rm -r --cached --ignore-unmatch node_modules dist
+git add .gitignore src package.json package-lock.json
+git status
